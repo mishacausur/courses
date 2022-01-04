@@ -1,3 +1,5 @@
+import 'package:courses/components/sidebar_row.dart';
+import 'package:courses/model/sidebar.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,10 +13,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Container(
-          child: Text("Hello from Flutter"),
-        ),
+        body: Center(
+          child: SideBarRow(item: sideBarItems[1]),
+        )
       ),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
