@@ -1,5 +1,7 @@
 import 'package:courses/components/sidebar_row.dart';
+import 'package:courses/constants.dart';
 import 'package:courses/model/sidebar.dart';
+import 'package:courses/screens/sidebar_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,9 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: SideBarRow(item: sideBarItems[1]),
-        )
+        body: SideBarScreen()
       ),
       debugShowCheckedModeBanner: false,
     );
